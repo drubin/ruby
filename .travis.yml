@@ -1,9 +1,8 @@
-gemfile: kubernetes/Gemfile
+gemfile: Gemfile
 rvm:
   - 2.6
 
 script:
-- cd kubernetes
 - bundle exec rubocop ./src
 - bundle exec rubocop ./spec
 - bundle exec rspec
